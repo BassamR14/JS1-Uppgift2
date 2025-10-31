@@ -12,6 +12,8 @@ function hoursSeconds(hours) {
   return hours * 3600 + " Seconds";
 }
 
+// you can only return one value, unless you save the values in an object or array
+
 console.log(hoursSeconds(2));
 
 //3
@@ -24,6 +26,8 @@ console.log(yearsDays(7));
 
 //4
 
+//you can define a parameter so height=3, then we only need base.
+//you get NanN when one of the parameters is undefined.
 function triangle(base, height) {
   return "Area: " + (base * height) / 2;
 }
@@ -68,12 +72,16 @@ console.log(farmer(1, 1, 1));
 //9
 
 // % gives you the remainder. Remainder means what is left behind. 4/2 can be divided by 2 twice so nothing is left over. 3 can only be divided by 2 once, meaning it has a remaineder of 1.
+// == doesn't take into account data types when comparing things, === is stricter and does.
 function divTwo(num) {
   if (num % 2 == 0) {
     return "true, number is even";
   } else {
     return "flase, number is odd";
   }
+
+  //alt2 , you dont need if/else if all you need is true/false as an answer.
+  // return num % 2 == 0;
 }
 
 console.log(divTwo(2));
